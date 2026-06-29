@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Astra ERP</title>
+        <link rel="stylesheet" href="file:///media/fuse/crostini_330dd540199e529b609d5da35629266e2218453c_termina_penguin/Vim/Proyectos/ERP/static/CSS/style.css">
+    </head> 
+    <body>
+        <header>
+            <h1>Astra ERP</h1>
+        </header>
+
+        <main>
+            <section id="operacion">
+                <h2 id="title">ENSAMBLE MANUAL Y SOLDADURA</h2>
+                <div id="operador">
+                <table>
+                    <tr><th>Nombre del operador: </th>
+                    <td id="nombre-operador">Esteban Quito</td></tr>
+                    <tr><th>Numero de nómina: </th>
+                    <td id="nomina-operador">50530</td></tr>
+                </table>
+                </div>
+                </section>
+
+                <aside class="sidebar">
+                    <h2>Menú de navegación</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="file:///media/fuse/crostini_330dd540199e529b609d5da35629266e2218453c_termina_penguin/Vim/Proyectos/ERP/index.html">Inicio</a></li>
+                            <li><a href="file:///media/fuse/crostini_330dd540199e529b609d5da35629266e2218453c_termina_penguin/Vim/Proyectos/ERP/Avances/Operacion10/Operacion10.html">Crear una WO</a></li>
+                            <li class="dropdown">
+                                <a href="file:///media/fuse/crostini_330dd540199e529b609d5da35629266e2218453c_termina_penguin/Vim/Proyectos/ERP/Avances/Avance.html">Avance de WO<span class="arrow">▼</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="file:///media/fuse/crostini_330dd540199e529b609d5da35629266e2218453c_termina_penguin/Vim/Proyectos/ERP/Avances/Operacion20/Operacion20.html">STM-INSERCION BASE</a></li>
+                                    <li><a href="file:///media/fuse/crostini_330dd540199e529b609d5da35629266e2218453c_termina_penguin/Vim/Proyectos/ERP/Avances/Operacion30/Operacion30.html">ENSAMBLE Y SOLDADURA</a></li>
+                                    <li><a href="file:///media/fuse/crostini_330dd540199e529b609d5da35629266e2218453c_termina_penguin/Vim/Proyectos/ERP/Avances/Operacion40/Operacion40.html">INSPECCION & AOI</a></li>
+                                    <li><a href="file:///media/fuse/crostini_330dd540199e529b609d5da35629266e2218453c_termina_penguin/Vim/Proyectos/ERP/Avances/Operacion50/Operacion50.html">PRUEBAS & EMPAQUE</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Inventario</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <section id="crear-wo">
+                    <h2>Avance de una W.O.</h2>
+                    <form id="form-wo">
+                        <div>
+                            <label for="model">Número de parte</label>
+                            <input type="text" id="model" name="model" required>
+                        </div>
+
+                        <div>
+                            <label>cantidad</label>
+                            <input type="number" id="cantidad" name="cantidad" required>
+                        </div>
+
+                        <div>
+                            <label for="fecha">Fecha de creación</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+
+                        <div>
+                            <label for="tipo">Tipo</label>
+                            <select id="tipo" name="tipo" required>
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="estatus">Estatus</label>
+                            <input type="text" id="estatus" name="estatus" readonly>
+                        </div>
+
+                        <div>
+                            <label for="comentario">Comentario</label>
+                            <input type="text" id="comentario" name="comentario" required>
+                        </div>
+
+                        <div>
+                            <label for="info">Información adicional</label><br>
+                            <textarea id="info" name="info" rows="12" cols="50"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="wo">Numero de WO</label>
+                            <input type="Text" id="wo" name="wo" required>
+                        </div>
+
+                        <div class="button">
+                        <button type="button" id="btn-consultar">Consultar</button>
+                        <button type="button" id="btn-avance">Avance</button>
+                        </div>
+                    </form>
+            </section>
+        </main>
+
+        <script src="Operacion30.js"></script>
+    </body>
+<html>
